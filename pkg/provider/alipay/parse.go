@@ -47,8 +47,11 @@ func (a *Alipay) translateToOrders(array []string) error {
 		return err
 	}
 	bill.Status = array[6]
+
+	// 交易关闭忽略
 	if bill.Status == "交易关闭" {
-		log.Printf("Line %d: There is a mole, The tx is canceled.", a.LineNum)
+		log.Printf("Line %d: There is a mole, The tx is canceled. ignore!", a.LineNum)
+		return nil
 	}
 	if bill.Status == "退款成功" {
 		log.Printf("Lind %d: There has a refund transaction.", a.LineNum)

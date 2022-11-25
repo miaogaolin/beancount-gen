@@ -155,16 +155,26 @@ func (b *BeanCount) writeBills(file *os.File) error {
 		return b.IR.Orders[i].PayTime.Before(b.IR.Orders[j].PayTime)
 	})
 
-	for i := range b.IR.Orders {
-		if err := b.writeBill(file, i); err != nil {
+	for _, v := range b.IR.Orders {
+		// 进出账户相同忽略
+		if v.MinusAccount == v.PlusAccount {
+			continue
+		}
+		// 交易关闭状态忽略
+		if v.TypeOriginal == "交易关闭" {
+			continue
+		}
+		if v.Money == 0 {
+			continue
+		}
+		if err := b.writeBill(file, v); err != nil {
 			return err
 		}
 	}
 	return nil
 }
 
-func (b *BeanCount) writeBill(file *os.File, index int) error {
-	o := b.IR.Orders[index]
+func (b *BeanCount) writeBill(file *os.File, o ir.Order) error {
 
 	var buf bytes.Buffer
 	var err error
