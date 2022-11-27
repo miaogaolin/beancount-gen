@@ -1,10 +1,10 @@
 package config
 
 import (
-	"github.com/deb-sig/double-entry-generator/pkg/provider/alipay"
-	"github.com/deb-sig/double-entry-generator/pkg/provider/htsec"
-	"github.com/deb-sig/double-entry-generator/pkg/provider/huobi"
-	"github.com/deb-sig/double-entry-generator/pkg/provider/wechat"
+	"github.com/miaogaolin/beancount-gen/pkg/provider/alipay"
+	"github.com/miaogaolin/beancount-gen/pkg/provider/htsec"
+	"github.com/miaogaolin/beancount-gen/pkg/provider/huobi"
+	"github.com/miaogaolin/beancount-gen/pkg/provider/wechat"
 )
 
 // Config is the global configuration.

@@ -3,13 +3,13 @@ package analyser
 import (
 	"fmt"
 
-	"github.com/deb-sig/double-entry-generator/pkg/analyser/alipay"
-	"github.com/deb-sig/double-entry-generator/pkg/analyser/htsec"
-	"github.com/deb-sig/double-entry-generator/pkg/analyser/huobi"
-	"github.com/deb-sig/double-entry-generator/pkg/analyser/wechat"
-	"github.com/deb-sig/double-entry-generator/pkg/config"
-	"github.com/deb-sig/double-entry-generator/pkg/consts"
-	"github.com/deb-sig/double-entry-generator/pkg/ir"
+	"github.com/miaogaolin/beancount-gen/pkg/analyser/alipay"
+	"github.com/miaogaolin/beancount-gen/pkg/analyser/htsec"
+	"github.com/miaogaolin/beancount-gen/pkg/analyser/huobi"
+	"github.com/miaogaolin/beancount-gen/pkg/analyser/wechat"
+	"github.com/miaogaolin/beancount-gen/pkg/config"
+	"github.com/miaogaolin/beancount-gen/pkg/consts"
+	"github.com/miaogaolin/beancount-gen/pkg/ir"
 )
 
 // Interface is the interface of analyser.

@@ -1,4 +1,4 @@
-module github.com/deb-sig/double-entry-generator
+module github.com/miaogaolin/beancount-gen
 
 go 1.12
 

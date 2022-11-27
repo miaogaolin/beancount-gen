@@ -1,7 +1,7 @@
 package alipay
 
 import (
-	"github.com/deb-sig/double-entry-generator/pkg/ir"
+	"github.com/miaogaolin/beancount-gen/pkg/ir"
 )
 
 // convertToIR convert alipay bills to IR.

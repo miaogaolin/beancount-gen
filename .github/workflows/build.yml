@@ -10,12 +10,12 @@ jobs:
       GOPATH: ${{ github.workspace }}/go
     defaults:
       run:
-        working-directory: ${{ env.GOPATH }}/src/github.com/deb-sig/double-entry-generator
+        working-directory: ${{ env.GOPATH }}/src/github.com/miaogaolin/beancount-gen
     steps:
       - name: Check out code
         uses: actions/checkout@v2
         with:
-          path: ${{ env.GOPATH }}/src/github.com/deb-sig/double-entry-generator
+          path: ${{ env.GOPATH }}/src/github.com/miaogaolin/beancount-gen
 
       - name: Setup Go
         uses: actions/setup-go@v2

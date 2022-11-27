@@ -9,10 +9,10 @@ import (
 	"sort"
 	"text/template"
 
-	"github.com/deb-sig/double-entry-generator/pkg/analyser"
-	"github.com/deb-sig/double-entry-generator/pkg/config"
-	"github.com/deb-sig/double-entry-generator/pkg/ir"
-	"github.com/deb-sig/double-entry-generator/pkg/util"
+	"github.com/miaogaolin/beancount-gen/pkg/analyser"
+	"github.com/miaogaolin/beancount-gen/pkg/config"
+	"github.com/miaogaolin/beancount-gen/pkg/ir"
+	"github.com/miaogaolin/beancount-gen/pkg/util"
 )
 
 // BeanCount is the implementation.

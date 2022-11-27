@@ -3,12 +3,12 @@ package compiler
 import (
 	"fmt"
 
-	"github.com/deb-sig/double-entry-generator/pkg/analyser"
+	"github.com/miaogaolin/beancount-gen/pkg/analyser"
 
-	"github.com/deb-sig/double-entry-generator/pkg/compiler/beancount"
-	"github.com/deb-sig/double-entry-generator/pkg/config"
-	"github.com/deb-sig/double-entry-generator/pkg/consts"
-	"github.com/deb-sig/double-entry-generator/pkg/ir"
+	"github.com/miaogaolin/beancount-gen/pkg/compiler/beancount"
+	"github.com/miaogaolin/beancount-gen/pkg/config"
+	"github.com/miaogaolin/beancount-gen/pkg/consts"
+	"github.com/miaogaolin/beancount-gen/pkg/ir"
 )
 
 // Interface is the type for the compiler.

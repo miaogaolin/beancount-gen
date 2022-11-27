@@ -24,10 +24,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/deb-sig/double-entry-generator/pkg/compiler"
-	"github.com/deb-sig/double-entry-generator/pkg/config"
-	"github.com/deb-sig/double-entry-generator/pkg/consts"
-	"github.com/deb-sig/double-entry-generator/pkg/provider"
+	"github.com/miaogaolin/beancount-gen/pkg/compiler"
+	"github.com/miaogaolin/beancount-gen/pkg/config"
+	"github.com/miaogaolin/beancount-gen/pkg/consts"
+	"github.com/miaogaolin/beancount-gen/pkg/provider"
 )
 
 var (

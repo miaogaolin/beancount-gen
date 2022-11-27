@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/deb-sig/double-entry-generator/pkg/cmd"
+	"github.com/miaogaolin/beancount-gen/pkg/cmd"
 	"github.com/spf13/cobra/doc"
 )
 

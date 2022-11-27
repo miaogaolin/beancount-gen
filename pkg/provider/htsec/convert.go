@@ -1,6 +1,6 @@
 package htsec
 
-import "github.com/deb-sig/double-entry-generator/pkg/ir"
+import "github.com/miaogaolin/beancount-gen/pkg/ir"
 
 func (h *Htsec) convertToIR() *ir.IR {
 	i := ir.New()
